@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻资讯</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/map.css">
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+
+
+
+<!--head-->
+<div class="main head">
+    <div class="cont">
+        <a href="" class="logo"><img src="images/i_03.png"></a>
+        <div class="nav">
+            <a href="index.html">首页</a>
+            <a href="new.html" class="active">新闻资讯</a>
+            <a href="server.html">案例中心</a>
+            <a href="job.html">招聘信息</a>
+            <a href="about.html">联系我们</a>
+        </div>
+    </div>
+</div>
+<!--/head-->
+
+
+
+<!--banner-->
+<div class="list_top_xw"></div>
+
+<!--banner-->
+
+<!--index_top-->
+<div class="main list_bj">
+
+    <div class="cont cont_list">
+    
+   werwe
+ 
+    </div>
+    
+
+</div>
+<!--index_top-->
+
+
+<section class="map" id="map">
+
+					<section class="container">
+
+						<ul>
+
+							<li class="poi poi-guiyang">
+
+								<h2>贵阳<i class="iconfont arrow-down">&#xe60a</i></h2>
+
+								<p style="display: none;">贵阳市云岩中大国际广场B1栋4102室
+
+									<br>0851-84139132
+
+									<br><a href="mailto:business@icecn.net">business@icecn.net</a></p>
+
+							</li>
+
+							<li class="poi poi-shanghai">
+
+								<h2>上海<i class="iconfont arrow-down">&#xe60a</i></h2>
+
+								<p style="display: none;">嘉定区南翔镇顺达路111弄42号3楼
+
+									<br>17717064321
+
+									<br><a href="mailto:business@icecn.net">business@icecn.net</a></p>
+
+							</li>
+
+							
+						</ul>
+
+						<div class="poi-box poi-box-gy">
+
+							<h2>贵阳<span class="poi-box-close">x</span></h2>
+
+							<p>贵阳市云岩中大国际广场B1栋4102室
+
+								<br>0851-84139132
+
+								<br>business@icecn.net</p>
+
+						</div>
+
+						<div class="poi-box poi-box-sh">
+
+							<h2>上海<span class="poi-box-close">x</span></h2>
+
+							<p>嘉定区南翔镇顺达路111弄42号3楼
+
+								<br>17717064321
+
+								<br>business@icecn.net</p>
+
+						</div>
+
+						
+
+					</section>
+
+				</section>
+
+<script src='./js/index.js'></script>
+
+<!--footer-->
+<div class="main footer">
+    <div class="cont">
+      <p>Copyright © IceFox Technology.Co.LTD. All rights reserved<br/>安全联盟认证 可信网站</p>
+    </div>
+</div>
+<!--/footer-->
+
+<script src="js/base.js"></script>
+
+<script src="js/jquery.superslide.2.1.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+window.onload = function(){ 
+	/*鼠标移过，左右按钮显示*/
+	$(".banner").hover(function(){
+			$(this).find(".prev,.next").fadeTo("show",0.3);
+		},function(){
+			$(this).find(".prev,.next").hide();
+		})
+		/*鼠标移过某个按钮 高亮显示*/
+		$(".prev,.next").hover(function(){
+			$(this).fadeTo("show",0.8);
+		},function(){
+			$(this).fadeTo("show",0.3);
+		})
+		$(".banner").slide({ titCell:".num ul" , mainCell:".bannerbox" , effect:"fold", autoPlay:true, delayTime:700 , autoPage:true });
+};
+	</script>
+
+</body>
+</html>
